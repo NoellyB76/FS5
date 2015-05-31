@@ -8,7 +8,11 @@
     <p>
       <h3>Choose Patterns and Materials</h3>
     </p>
+
+
     <div  id="lstAccordion" ng-controller="ImgAccordion">
+    <div id="divChosenPalletteItems"></div>
+    <input type="button" id="cmdSendEmail" class="button button-positive" value="Create Email" ng-click="SendMessage()">
     <p>
       <ion-list>
         <div ng-repeat="group in groups">
@@ -22,11 +26,12 @@
           <ion-item class="item-accordion"
                     ng-repeat="item in group.items"
                     ng-show="isGroupShown(group)">
-            <img src="img/pallette/{{item}}.png" width="40" height="40" border="0"> &nbsp;&nbsp;{{item}}
+             <a ng-href="#" ng-click="addPalletteItem(group.name, item, furnitureItem.name);"><img src="img/pallette/{{item}}.png" width="40" height="40" border="0"> &nbsp;&nbsp;{{item}}</a>
           </ion-item>
         </div>
       </ion-list>
     </p>
     </div>
+
   </ion-content>
 </ion-view>
