@@ -78,3 +78,8 @@ div.tab-nav
 {
     display: none;   
 }
+
+button, button-positive
+{
+    background-color: #fff;   
+}
