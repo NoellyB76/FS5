@@ -1,20 +1,12 @@
-<ion-view view-title="FurnitureItems">
-  <ion-content>
-    <div class="list card">
-      <div class="item item-divider">Text Search</div>
-      <div class="item item-body">
-        <label class="item item-input">
-          <i class="icon ion-search placeholder-icon"></i>
-          <input type="search" placeholder="Search Furniture">
-        </label>
-      </div>
-    </div>
-    <ion-list>
+<ion-view view-title="Choose A Piece">
+  <ion-content style="background-color: #fa5049;">
+    <ion-list style="background-color: #fa5049;">
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="furnitureItem in furnitureItems" type="item-text-wrap" href="#/tab/dash/{{furnitureItem.id}}">
-        <img ng-src="img/{{furnitureItem.face}}">
-        <h2>{{furnitureItem.name}}</h2>
-        <p>{{furnitureItem.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
+            <div><img ng-src="img/{{furnitureItem.face}}" border="0" class="FurnitureSearchResultImage"></div><div id="FurnitureSearchResultTitle">{{furnitureItem.name}}</div>
+            <p class="FurnitureSearchResultText">{{furnitureItem.lastText}} &nbsp;Design &nbsp; <i class="icon ion-chevron-right icon-accessory"></i>
+            </p>
+        </div>
+
       </ion-item>
     </ion-list>
 

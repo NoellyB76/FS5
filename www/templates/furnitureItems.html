@@ -1,8 +1,8 @@
-<ion-view view-title="{{furnitureItem.name}}">
-  <h1></h1>
+<ion-view view-title="Design Your Piece">
+  
   <ion-content class="padding">
-    <img ng-src="img/{{furnitureItem.face}}" style="width:384px; height: 288px">
-    <p>
+    <img ng-src="img/{{furnitureItem.face}}" style="width:100%">
+    <p class="FurnitureItemDescription">
       {{furnitureItem.lastText}}
     </p>
     <p>
@@ -10,7 +10,7 @@
     </p>
 
 
-    <div  id="lstAccordion" ng-controller="ImgAccordion">
+    <div id="lstAccordion" ng-controller="ImgAccordion">
     <div id="divChosenPalletteItems"></div>
     <input type="button" id="cmdSendEmail" class="button button-positive" value="Create Email" ng-click="SendMessage()">
     <p>

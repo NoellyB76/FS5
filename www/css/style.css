@@ -1,10 +1,20 @@
 /* Empty. Add your own CSS if you like */
 body {
     cursor: url('../img/finger.png'), auto;
+    background-color: #f05a49;
 }
 
+.background, .background .pane, .background .item, .background .item-complex .item-content{
+    background-color: #f05a49;
+
+}
+.frame_look_feel {
+    background-color: #f05a49;
+}
+
+
 .list .item.item-accordion {
-    line-height: 38px;
+    
     padding-top: 0;
     padding-bottom: 0;
     transition: 0.09s all linear;
@@ -14,5 +24,57 @@ body {
 }
 .list .item.item-accordion.ng-hide-add,
 .list .item.item-accordion.ng-hide-remove {
-    display: block !important;
+    display: block !important;, 
+}
+
+div.title.title-center.header-item, button-clear, header-item, ion-header-bar, ion-header-bar.bar-stable.bar.bar-header.disable-user-behavior, button back-button hide buttons  button-clear header-item
+{
+    background-color: #f05a49;
+    color: #fff;
+}
+
+img.FurnitureSearchResultImage
+{
+ width: 100%;
+    background-color: #ffffff;
+    
+}
+
+ion-content
+{
+ margin: 0px;
+ padding: 0px;
+}
+
+div#FurnitureSearchResultTitle.ng-binding
+{
+  font-weight: normal;
+   font-size: 22px;
+   background-color: #fff;
+   padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+p.FurnitureSearchResultText.ng-binding
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    word-wrap: normal;
+    white-space: normal;
+}
+p.FurnitureItemDescription.ng-binding
+{
+    background-color: #fff;
+    padding: 4px;
+}
+
+div.scroll
+{
+    background-color: #fff;   
+}
+div.tab-nav
+{
+    display: none;   
 }
