@@ -60,6 +60,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+  
+    .state('tab.sendquote', {
+      url: '/sendquote',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/tab-Form.html',
+          controller: 'SendQuoteController'
+        }
+      }
+    })
+  
+      .state('tab.funnel', {
+      url: '/funnel',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/tab-submitted.html',
+          controller: 'FunnelController'
+        }
+      }
+    })
 
   .state('tab.account', {
     url: '/account',

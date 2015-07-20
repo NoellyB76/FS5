@@ -2,6 +2,10 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
+.controller('SendQuoteController', function($scope) {})
+
+.controller('FunnelController', function($scope) {})
+
 .controller('FurnitureItemsCtrl', function($scope, FurnitureItems) {
   $scope.furnitureItems = FurnitureItems.all();
   $scope.remove = function(furnitureItem) {
@@ -22,6 +26,7 @@ angular.module('starter.controllers', [])
   $scope.cmdMessage = document.getElementById('cmdSendEmail');
   $scope.strEmailMessage = "";
 
+    /*
   $scope.groups = [];
   $scope.groups[0] = {
     name: 'Frame Finish',
@@ -39,6 +44,7 @@ angular.module('starter.controllers', [])
     };
 
 
+    
   $scope.toggleGroup = function(group) {
     if ($scope.isGroupShown(group)) {
       $scope.shownGroup = null;
@@ -62,7 +68,15 @@ angular.module('starter.controllers', [])
 
       });
   };
+  */
 
+  $scope.PalletteImages = [];
+  $scope.PalletteImages[0] = {
+      name: 'Images',
+      items: ["antique black walnut", "antique black", "antique dark rum",  'Main Fabric',"belle sapphire", "canvas cork", "canyon bamboo"]
+  };
+    
+    
   $scope.addPalletteItem = function(strGroupName, objItemName, strFurnName)
   {
 
