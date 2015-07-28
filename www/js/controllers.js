@@ -83,7 +83,8 @@ angular.module('starter.controllers', [])
       var objP = window.document.getElementById('divChosenPalletteItems');
       //Check to see if the group has already been mentioned, if so add the item to the group...
       var bolGFound = false;
-      for (var i = 0; i < $scope.strGroupNames.length; i++)
+      var i = 0;
+      for (i = 0; i < $scope.strGroupNames.length; i++)
       {
         if($scope.strGroupNames[i] == strGroupName)
         {
