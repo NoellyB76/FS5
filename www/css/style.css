@@ -123,7 +123,7 @@ div.title.title-center.header-item
 }
 
 p{
- margin-left: 60px;
+    'margin-left: 60px; - this is causing problems in the dashboard, but needed for the end screens - need a solution
     font-size: 20px;
 }
 
